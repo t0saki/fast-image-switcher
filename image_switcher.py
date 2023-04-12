@@ -49,8 +49,9 @@ def switch_image():
 # Show the first image
 img_labels[0].pack()
 
-# Bind a keypress event to switch the image
+# Bind the key and mouse events to the switch_image function
 root.bind("<Key>", lambda event: switch_image())
+root.bind("<Button>", lambda event: switch_image())
 
 # Start the main event loop
 root.mainloop()
